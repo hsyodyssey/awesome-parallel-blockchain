@@ -1,36 +1,60 @@
 # awesome-parallel-blockchain
 Faster, robust, and high-performanced blockchain systems are the cornerstone of tomorrow.
 
-`Contributions from the community are welcome; make sure the material you add is worth reading, at least if you read it yourself`
+1. `Contributions from the community are welcome; make sure the material you add is worth reading, at least you have read it yourself.`
+2. About Format:
+    - for the papers: [Type] [Conference(If any)] Name, Author, Year, Accessible links
+        - Type: <font color=#1E88E5>[Academic]</font> Paper that demonstrates more about theoretical algorithms or theoretical analysis.
+        - Type: <font color=#00E676>[Engineering]</font> Paper that introduces a new system architecture or practical algorithms
+    - for the repos: [Type] Repo Name, Org, Year, Accessible links
+        - Type: <font color=#FFB300>[PoC]</font> Basic runnable codebase with some basic functions to evaluate the ideas. 
+        - Type: <font color=#F4511E>[Developing]</font> Systems under development that have some basic features but are not yet ready for use in a stable production environment.
+        - Type: <font color=#64DD17>[Product]</font> Systems that are still under maintenance are already ready to be used in production environments.
+        - Type: <font color=#F50057>[Archive]</font> Non-maintained code base.
 
-## Parallelism and concurrency
+
+## Parallelism and concurrency in brief
 Parallelism and concurrency are two sharp swords that could improve the transaction execution performance of Blockchain and Blockchain-related VMs(i.e., EVM and SVM). 
 
 This knowledge base collects information about state-of-the-art research and engineering works about parallel and concurrent blockchain, blockchain VM, and other related systems, with some relevant examples for better understanding.
 
-### Parallelsim and Concurrency in Blockchain
+**Parallelism** and **concurrency** are two easily confused terms; although they are both used to improve the efficiency of the execution of the system, they differ in meaning and in the scenarios in which they are used.
 
-#### Research Papers
-- [Academic] An Empirical Study of Speculative Concurrency in Ethereum
+**Parallelism**, typically refers to multiple processes or threads working on different tasks at the same time. For example, ten threads are executing ten different transactions simultaneously. Or think of ten dogs eating from ten food bowls.
+
+<div align="center"><img src="img/misc/parallel_dogs.png" width="40%">
+</div>
+
+**Concurrency**, typically refers to a thread simultaneously working multiple tasks to increase efficiency. For instance, certain operations, like reading data from disk(i.e., sLoad in EVM), might need to wait for a while in order to be completed. In such case, the main thread could move ahead and do other duties, like computation. Then, It returns to continuing execution after the disk's data has been read in complete. Again, think about using a bowl to feed ten dogs, and being in the middle of a meal the dog is chewing on a bone, when you could start by letting him out of the bowl for a while and letting the other dogs eat first.
+<div align="center"><img src="img/misc/concurrent_dogs.png" width="40%">
+</div>
+
+For further reading: [Difference between Concurrency and Parallelism](https://www.geeksforgeeks.org/difference-between-concurrency-and-parallelism/)
+
+
+## Parallelsim and Concurrency in Blockchain
+
+### Research Papers
+- <font color=#1E88E5>[Academic]</font> An Empirical Study of Speculative Concurrency in Ethereum
 Smart Contracts, 2019, [[Paper]](https://arxiv.org/pdf/1901.01376.pdf)
-- [Academic] Parallel and Asynchronous Smart Contract Execution, 2021, [[Paper]](https://ieeexplore.ieee.org/document/9477197)
-- [Engineering] Block-STM: Scaling Blockchain Execution by Turning Ordering Curse to a Performance Blessing, **Aptos**, 2022, [[Paper]](https://arxiv.org/abs/2203.06871), [[Video]](https://www.youtube.com/watch?v=fK_V9Z1q10U)
+- <font color=#1E88E5>[Academic]</font> Parallel and Asynchronous Smart Contract Execution, 2021, [[Paper]](https://ieeexplore.ieee.org/document/9477197)
+- <font color=#00E676>[Engineering]</font> Block-STM: Scaling Blockchain Execution by Turning Ordering Curse to a Performance Blessing, **Aptos**, 2022, [[Paper]](https://arxiv.org/abs/2203.06871), [[Video]](https://www.youtube.com/watch?v=fK_V9Z1q10U)
 
-#### Engineering Repos
-- [PoC] Parallel-go-ethereum, **ABCDELabs**, 2022, [[Codebase]](https://github.com/ABCDELabs/parallel-go-ethereum)
-- [Developing] Evmone-compiler, **MegaETH**, 2023, [[Codebase]](https://github.com/megaeth-labs/evmone-compiler)
+### Engineering Repos
+- <font color=#FFB300>[PoC]</font> Parallel-go-ethereum, **ABCDELabs**, 2022, [[Codebase]](https://github.com/ABCDELabs/parallel-go-ethereum)
+- <font color=#F4511E>[Developing]</font> Evmone-compiler, **MegaETH**, 2023, [[Codebase]](https://github.com/megaeth-labs/evmone-compiler)
 
-#### Other Materials
+### Other Materials
 
+## Parallelsim and Concurrency in DBMS
 
-### Parallelsim and Concurrency in DBMS
+### Research Papers
 
-#### Research Papers
-#### Engineering Repos
+### Engineering Repos
 
-### Parallelsim and Concurrency in OS
+## Parallelsim and Concurrency in OS
 
-#### Research Papers
-#### Engineering Repos
+### Research Papers
+### Engineering Repos
 
 ## Appendix
