@@ -23,11 +23,11 @@ This knowledge base collects information about state-of-the-art research and eng
 
 **Parallelism**, typically refers to multiple processes or threads working on different tasks at the same time. For example, ten threads are executing ten different transactions simultaneously. Or think of ten dogs eating from ten food bowls.
 
-<div align="center"><img src="img/misc/parallel_dogs.png" width="40%">
+<div align="center"><img src="img/misc/parallel_dogs.png" width="45%">
 </div>
 
 **Concurrency**, typically refers to a thread simultaneously working multiple tasks to increase efficiency. For instance, certain operations, like reading data from disk(i.e., sLoad in EVM), might need to wait for a while in order to be completed. In such case, the main thread could move ahead and do other duties, like computation. Then, It returns to continuing execution after the disk's data has been read in complete. Again, think about using a bowl to feed ten dogs, and being in the middle of a meal the dog is chewing on a bone, when you could start by letting him out of the bowl for a while and letting the other dogs eat first.
-<div align="center"><img src="img/misc/concurrent_dogs.png" width="40%">
+<div align="center"><img src="img/misc/concurrent_dogs.png" width="45%">
 </div>
 
 For further reading: [Difference between Concurrency and Parallelism](https://www.geeksforgeeks.org/difference-between-concurrency-and-parallelism/)
