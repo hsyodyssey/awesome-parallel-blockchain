@@ -2,7 +2,7 @@
 Faster, robust, and high-performanced blockchain systems are the cornerstone of tomorrow.
 
 1. `Contributions from the community are welcome; make sure the material you add is worth reading, at least you have read it yourself.`
-2. About Format:
+2. About the Format:
     - for the papers: [Type] [Conference(If any)] Name, Author, Year, Accessible links
         - Type: <font color=#1E88E5>[Academic]</font> Paper that demonstrates more about theoretical algorithms or theoretical analysis.
         - Type: <font color=#00E676>[Engineering]</font> Paper that introduces a new system architecture or practical algorithms
@@ -14,6 +14,7 @@ Faster, robust, and high-performanced blockchain systems are the cornerstone of 
 
 
 ## Parallelism and concurrency in brief
+### Background
 Parallelism and concurrency are two sharp swords that could improve the transaction execution performance of Blockchain and Blockchain-related VMs(i.e., EVM and SVM). 
 
 This knowledge base collects information about state-of-the-art research and engineering works about parallel and concurrent blockchain, blockchain VM, and other related systems, with some relevant examples for better understanding.
@@ -31,6 +32,18 @@ This knowledge base collects information about state-of-the-art research and eng
 
 For further reading: [Difference between Concurrency and Parallelism](https://www.geeksforgeeks.org/difference-between-concurrency-and-parallelism/)
 
+### Core challenges
+
+In general, the core challenge of adopting a parallel or concurrent method is the data race problem, read-write conflict, or data hazard problem. All these terms describe the same issue: different threads or operations are trying to read and modify the same data at the same time. 
+
+Consider a transfer scenario on Ethereum where Alice and Bob both want to transfer 10 ETH to Carl at the same time. Suppose Carl's initial balance is 100 ETH. After these two transactions are completed, Carl's balance should be 120 ETH. Let's consider a fully concurrent scenario where Alice's and Bob's transactions start executing at the same time. The initial balance of Carl that their transactions read would be 100 ETH (see the error?). Eventually, they will write Carl's balance as 110 ETH.
+
+To resolve a data race issue, there are usually three ways:
+- Protecting competing data by adding **locks**,
+- **Scheduling module** to avoid conflicts,
+- **Optimistic approach** that doesn't worry about conflicts but **rolls back** transactions after encounting the conflict issue.
+
+So how do we implement these solutions in the blockchain world? Let's dig in!
 
 ## Parallelsim and Concurrency in Blockchain
 
