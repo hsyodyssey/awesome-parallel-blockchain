@@ -52,8 +52,8 @@ In the current EVM architecture, the most fine-grained read and write operators 
 In terms of system implementations, there are three general forms of Parallel/Concurrent EVM.
 
 1. Multi-threads with one EVM instance.
-2. Multi-threads with multi-EMV instances on one node.
-3. Multi-threads with multi-EMV instances on multi-nodes (basically, this is system-level sharding).
+2. Multi-threads with multi-EVM instances on one node.
+3. Multi-threads with multi-EVM instances on multi-nodes (basically, this is system-level sharding).
 
 ## Parallelsim and Concurrency in Blockchain
 
