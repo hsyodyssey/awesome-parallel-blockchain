@@ -55,6 +55,15 @@ In terms of system implementations, there are three general forms of Parallel/Co
 2. Multi-threads with multi-EVM instances on one node.
 3. Multi-threads with multi-EVM instances on multi-nodes (basically, this is system-level sharding).
 
+So, what makes concurrency on blockchain different than in the database system?
+1. Absolute determinism on a blockchain system to ensure that transactions are re-executed between different validators is the same.
+2. The ultimate goal of validator is higher earnings, not faster executing transactions.
+
+What we needs?
+1. System-level consensus is required, and faster execution will bring higher returns.
+2. Multivariate scheduling algorithms that, given a block limit, capture more revenue while being able to complete the execution faster.
+3. More fine-grained data operations, including opcode-level data locks, in-memory cache layers, etc.
+
 ## Parallelsim and Concurrency in Blockchain
 
 ### Research Papers
