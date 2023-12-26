@@ -41,7 +41,7 @@ Consider a transfer scenario on Ethereum where Alice and Bob both want to transf
 To resolve a data race issue, there are usually three ways:
 - Protecting competing data by adding **locks**,
 - **Scheduling module** to avoid conflicts,
-- **Optimistic approach** that doesn't worry about conflicts but **rolls back** transactions after encounting the conflict issue.
+- **Optimistic approach** that doesn't worry about conflicts but **rolls back** transactions after encountering the conflict issue.
 
 So how do we implement these solutions in the blockchain world? Let's dig in!
 
@@ -60,12 +60,12 @@ So, what makes Parallism/concurrency on blockchain different than in the databas
 2. **Absolute determinism** on a blockchain system to ensure that transactions are re-executed between different validators is the same.
 3. The ultimate goal of validator is higher earnings, not faster executing transactions.
 
-What we needs?
+What do we need?
 1. System-level consensus is required, and faster execution will bring higher returns.
 2. **Multivariate scheduling algorithms** that, given a block limit, capture more revenue while being able to complete the execution faster.
 3. More fine-grained data operations, including **opcode-level data locks**, in-memory cache layers, etc.
 
-## Parallelsim and Concurrency in Blockchain
+## Parallelism and Concurrency in Blockchain
 
 ### Research Papers
 - <font color=#1E88E5>[Academic]</font> An Empirical Study of Speculative Concurrency in Ethereum
@@ -79,16 +79,23 @@ Smart Contracts, 2019, [[Paper]](https://arxiv.org/pdf/1901.01376.pdf)
 
 ### Other Materials
 
-## Parallelsim and Concurrency in DBMS
+## Parallelism and Concurrency in DBMS
 
 ### Research Papers
+#### Parallel Query Optimization
+- Scheduling problems in parallel query optimization, 1995, [[Paper]](https://dl.acm.org/doi/pdf/10.1145/212433.212471)
+- Efficient and accurate cost models for parallel query optimization, 1996, [[Paper]](https://dl.acm.org/doi/pdf/10.1145/237661.237707)
+- Parallelizing query optimization, 2008, [[Paper]](http://www.vldb.org/pvldb/vol1/1453882.pdf)
+- Flow algorithms for parallel query optimization, 2008, [[Paper]](https://ieeexplore.ieee.org/iel5/4492792/4497384/04497484.pdf?casa_token=HMsG6W9-6DgAAAAA:pSTUpQDjcZj6cTrk-KuaCI2U8drRyp9ExlMNA_nYRvdkjMTICoLs3qVu6p4fe2Hsikfdb8SCN5A)
+- Query optimization for massively parallel data processing, 2011, [[Paper]](https://dl.acm.org/doi/pdf/10.1145/2038916.2038928?casa_token=1w8xkLfre-EAAAAA:nnTDmTDFPM5LDd9vO4z3jDP0VZM8Benf_NOhPBGD7h_wPr4KxY640w_Tj6XCC6oHV7PormnT0aEtJFE)
+- Communication steps for parallel query processing, 2017, [[Paper]](https://dl.acm.org/doi/pdf/10.1145/3125644)
 
 ### Engineering Repos
 
 ### Other Materials
 - [Tech Doc] Concurrency Control in PostgreSQL, PostgreSQL, [[Doc link]](https://www.postgresql.org/docs/current/transaction-iso.html)
 
-## Parallelsim and Concurrency in OS
+## Parallelism and Concurrency in OS
 
 ### Research Papers
 ### Engineering Repos
