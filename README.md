@@ -107,7 +107,7 @@ What do we need?
 ### Engineering Repos
 
 ### Other Materials
-- [Tech Doc] Concurrency Control in PostgreSQL, PostgreSQL, [[Doc link]](https://www.postgresql.org/docs/current/transaction-iso.html)
+- <font color=#915099>[Tech Article]</font> Concurrency Control in PostgreSQL, PostgreSQL, [[Doc link]](https://www.postgresql.org/docs/current/transaction-iso.html)
 
 ## Parallelism and Concurrency in OS
 
