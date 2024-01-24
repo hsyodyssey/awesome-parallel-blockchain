@@ -6,6 +6,7 @@ Faster, robust, and high-performanced blockchain systems are the cornerstone of 
     - for the papers: [Type] [Conference(If any)] Name, Author, Year, Accessible links
         - Type: <font color=#1E88E5>[Academic]</font> Paper that demonstrates more about theoretical algorithms or theoretical analysis.
         - Type: <font color=#00E676>[Engineering]</font> Paper that introduces a new system architecture or practical algorithms
+        - Type: <font color=#915099>[Tech Article]</font> Technical article or blog that introduces some novel insights or solid analysis.
     - for the repos: [Type] Repo Name, Org, Year, Accessible links
         - Type: <font color=#FFB300>[PoC]</font> Basic runnable codebase with some basic functions to evaluate the ideas. 
         - Type: <font color=#F4511E>[Developing]</font> Systems under development that have some basic features but are not yet ready for use in a stable production environment.
@@ -78,7 +79,7 @@ What do we need?
 - <font color=#1E88E5>[Academic][PDP]</font> An efficient framework for optimistic concurrent execution of smart contracts, 2019, [[Paper]](https://ieeexplore.ieee.org/document/8671637)
 - <font color=#1E88E5>[Academic]</font> FastFabric: Scaling hyperledger fabric to 20000 transactions per second, 2019, [[Paper]](https://ieeexplore.ieee.org/document/8751452)
 - <font color=#1E88E5>[Academic][SIGMOD]</font> Blurring the Lines between Blockchains and Database Systems: the Case of Hyperledger Fabric, 2019, [[Paper]](https://dl.acm.org/doi/10.1145/3299869.3319883)
-- <font color=#1E88E5>[Academic][ICDCS).]</font> Parblockchain: Leveraging transaction parallelism in permissioned blockchain systems, 2019, [[Paper]](https://www.computer.org/csdl/proceedings-article/icdcs/2019/251900b337/1ezRUMDrfMc)
+- <font color=#1E88E5>[Academic][ICDCS]</font> Parblockchain: Leveraging transaction parallelism in permissioned blockchain systems, 2019, [[Paper]](https://www.computer.org/csdl/proceedings-article/icdcs/2019/251900b337/1ezRUMDrfMc)
 - <font color=#1E88E5>[Academic][PODC]</font> Adding Concurrency to Smart Contracts, 2017, [[Paper]](https://doi.org/10.1145/3087801.3087835)
 - <font color=#00E676>[Engineering]</font> Block-STM: Scaling Blockchain Execution by Turning Ordering Curse to a Performance Blessing, **Aptos**, 2022, [[Paper]](https://arxiv.org/abs/2203.06871), [[Video]](https://www.youtube.com/watch?v=fK_V9Z1q10U)
 
@@ -95,13 +96,13 @@ What do we need?
 
 ### Research Papers
 #### Parallel Query Optimization
-- On Optimistic Methods for Concurrency Controll, 1981, [[Paper]](https://www.eecs.harvard.edu/~htk/publication/1981-tods-kung-robinson.pdf)
-- Scheduling problems in parallel query optimization, 1995, [[Paper]](https://dl.acm.org/doi/pdf/10.1145/212433.212471)
-- Efficient and accurate cost models for parallel query optimization, 1996, [[Paper]](https://dl.acm.org/doi/pdf/10.1145/237661.237707)
-- Parallelizing query optimization, 2008, [[Paper]](http://www.vldb.org/pvldb/vol1/1453882.pdf)
-- Flow algorithms for parallel query optimization, 2008, [[Paper]](https://ieeexplore.ieee.org/iel5/4492792/4497384/04497484.pdf?casa_token=HMsG6W9-6DgAAAAA:pSTUpQDjcZj6cTrk-KuaCI2U8drRyp9ExlMNA_nYRvdkjMTICoLs3qVu6p4fe2Hsikfdb8SCN5A)
-- Query optimization for massively parallel data processing, 2011, [[Paper]](https://dl.acm.org/doi/pdf/10.1145/2038916.2038928?casa_token=1w8xkLfre-EAAAAA:nnTDmTDFPM5LDd9vO4z3jDP0VZM8Benf_NOhPBGD7h_wPr4KxY640w_Tj6XCC6oHV7PormnT0aEtJFE)
-- Communication steps for parallel query processing, 2017, [[Paper]](https://dl.acm.org/doi/pdf/10.1145/3125644)
+- <font color=#1E88E5>[Academic]</font> On Optimistic Methods for Concurrency Controll, 1981, [[Paper]](https://www.eecs.harvard.edu/~htk/publication/1981-tods-kung-robinson.pdf)
+- <font color=#1E88E5>[Academic]</font> Scheduling problems in parallel query optimization, 1995, [[Paper]](https://dl.acm.org/doi/pdf/10.1145/212433.212471)
+- <font color=#1E88E5>[Academic]</font> Efficient and accurate cost models for parallel query optimization, 1996, [[Paper]](https://dl.acm.org/doi/pdf/10.1145/237661.237707)
+- <font color=#1E88E5>[Academic]</font> Parallelizing query optimization, 2008, [[Paper]](http://www.vldb.org/pvldb/vol1/1453882.pdf)
+- <font color=#1E88E5>[Academic]</font> Flow algorithms for parallel query optimization, 2008, [[Paper]](https://ieeexplore.ieee.org/iel5/4492792/4497384/04497484.pdf?casa_token=HMsG6W9-6DgAAAAA:pSTUpQDjcZj6cTrk-KuaCI2U8drRyp9ExlMNA_nYRvdkjMTICoLs3qVu6p4fe2Hsikfdb8SCN5A)
+- <font color=#1E88E5>[Academic]</font> Query optimization for massively parallel data processing, 2011, [[Paper]](https://dl.acm.org/doi/pdf/10.1145/2038916.2038928?casa_token=1w8xkLfre-EAAAAA:nnTDmTDFPM5LDd9vO4z3jDP0VZM8Benf_NOhPBGD7h_wPr4KxY640w_Tj6XCC6oHV7PormnT0aEtJFE)
+- <font color=#1E88E5>[Academic]</font> Communication steps for parallel query processing, 2017, [[Paper]](https://dl.acm.org/doi/pdf/10.1145/3125644)
 
 ### Engineering Repos
 
