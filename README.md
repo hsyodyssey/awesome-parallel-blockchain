@@ -68,9 +68,18 @@ What do we need?
 ## Parallelism and Concurrency in Blockchain
 
 ### Research Papers
-- <font color=#1E88E5>[Academic]</font> An Empirical Study of Speculative Concurrency in Ethereum
-Smart Contracts, 2019, [[Paper]](https://arxiv.org/pdf/1901.01376.pdf)
+- <font color=#1E88E5>[Academic][TPDS]</font> PaVM: A Parallel Virtual Machine for Smart Contract Execution and Validation, 2023, [[Paper]](https://ieeexplore.ieee.org/document/10323104)
 - <font color=#1E88E5>[Academic]</font> Parallel and Asynchronous Smart Contract Execution, 2021, [[Paper]](https://ieeexplore.ieee.org/document/9477197)
+- <font color=#1E88E5>[Academic][SIGPLAN]</font> Practical smart contract sharding with ownership and commutativity analysis, 2021, [[Paper]](https://dl.acm.org/doi/pdf/10.1145/3453483.3454112)
+- <font color=#1E88E5>[Academic][VLDB]</font> SlimChain: scaling blockchain transactions through off-chain storage and parallel processing, 2021, [[Paper]](https://dl.acm.org/doi/abs/10.14778/3476249.3476283)
+- <font color=#1E88E5>[Academic][DASFAA]</font> PEEP: A Parallel Execution Engine for Permissioned Blockchain Systems, 2021, [[Paper]](https://link.springer.com/chapter/10.1007/978-3-030-73200-4_24)
+- <font color=#1E88E5>[Academic][SIGMOD]</font> A Transactional Perspective on Execute-order-validate Blockchains, 2020, [[Paper]](https://dl.acm.org/doi/10.1145/3318464.3389693)
+- <font color=#1E88E5>[Academic]</font> An Empirical Study of Speculative Concurrency in Ethereum Smart Contracts, 2019, [[Paper]](https://arxiv.org/pdf/1901.01376.pdf)
+- <font color=#1E88E5>[Academic][PDP]</font> An efficient framework for optimistic concurrent execution of smart contracts, 2019, [[Paper]](https://ieeexplore.ieee.org/document/8671637)
+- <font color=#1E88E5>[Academic]</font> FastFabric: Scaling hyperledger fabric to 20000 transactions per second, 2019, [[Paper]](https://ieeexplore.ieee.org/document/8751452)
+- <font color=#1E88E5>[Academic][SIGMOD]</font> Blurring the Lines between Blockchains and Database Systems: the Case of Hyperledger Fabric, 2019, [[Paper]](https://dl.acm.org/doi/10.1145/3299869.3319883)
+- <font color=#1E88E5>[Academic][ICDCS).]</font> Parblockchain: Leveraging transaction parallelism in permissioned blockchain systems, 2019, [[Paper]](https://www.computer.org/csdl/proceedings-article/icdcs/2019/251900b337/1ezRUMDrfMc)
+- <font color=#1E88E5>[Academic][PODC]</font> Adding Concurrency to Smart Contracts, 2017, [[Paper]](https://doi.org/10.1145/3087801.3087835)
 - <font color=#00E676>[Engineering]</font> Block-STM: Scaling Blockchain Execution by Turning Ordering Curse to a Performance Blessing, **Aptos**, 2022, [[Paper]](https://arxiv.org/abs/2203.06871), [[Video]](https://www.youtube.com/watch?v=fK_V9Z1q10U)
 
 ### Engineering Repos
@@ -78,11 +87,15 @@ Smart Contracts, 2019, [[Paper]](https://arxiv.org/pdf/1901.01376.pdf)
 - <font color=#F4511E>[Developing]</font> Evmone-compiler, **MegaETH**, 2023, [[Codebase]](https://github.com/megaeth-labs/evmone-compiler)
 
 ### Other Materials
+- <font color=#FFB300>[Blog]</font> Speeding up the EVM (part 1), Flashbots, 2022, [[Blog](https://writings.flashbots.net/speeding-up-evm-part-1)]
+
+
 
 ## Parallelism and Concurrency in DBMS
 
 ### Research Papers
 #### Parallel Query Optimization
+- On Optimistic Methods for Concurrency Controll, 1981, [[Paper]](https://www.eecs.harvard.edu/~htk/publication/1981-tods-kung-robinson.pdf)
 - Scheduling problems in parallel query optimization, 1995, [[Paper]](https://dl.acm.org/doi/pdf/10.1145/212433.212471)
 - Efficient and accurate cost models for parallel query optimization, 1996, [[Paper]](https://dl.acm.org/doi/pdf/10.1145/237661.237707)
 - Parallelizing query optimization, 2008, [[Paper]](http://www.vldb.org/pvldb/vol1/1453882.pdf)
