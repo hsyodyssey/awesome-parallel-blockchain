@@ -27,7 +27,7 @@ This knowledge base collects information about state-of-the-art research and eng
 <div align="center"><img src="img/misc/parallel_dogs.png" width="45%">
 </div>
 
-**Concurrency**, typically refers to a thread simultaneously working multiple tasks to increase efficiency. For instance, certain operations, like reading data from disk(i.e., sLoad in EVM), might need to wait for a while in order to be completed. In such case, the main thread could move ahead and do other duties, like computation. Then, It returns to continuing execution after the disk's data has been read in complete. Again, think about using a bowl to feed ten dogs, and being in the middle of a meal the dog is chewing on a bone, when you could start by letting him out of the bowl for a while and letting the other dogs eat first.
+**Concurrency**, typically refers to a thread simultaneously working multiple tasks to increase efficiency. For instance, certain operations, like reading data from disk(i.e., sLoad in EVM), might need to wait for a while in order to be completed. In such a case, the main thread could move ahead and do other duties, like computation. Then, It returns to continuing execution after the disk's data has been read in complete. Again, think about using a bowl to feed ten dogs, and being in the middle of a meal the dog is chewing on a bone, when you could start by letting him out of the bowl for a while and letting the other dogs eat first.
 <div align="center"><img src="img/misc/concurrent_dogs.png" width="45%">
 </div>
 
@@ -93,21 +93,32 @@ What do we need?
 
 
 ## Parallelism and Concurrency in DBMS
+In the context of database management systems (DBMS), parallelism refers to the capability that a single query can be executed by utilizing multiple CPU and IO resources. The typical technical challenges of parallel query execution include parallel operator implementation, parallel query optimization, load balancing, etc.   
+
+On the other hand, concurrency in DBMS refers to the process that executes multiple transactions simultaneously without conflicting with each other. 
 
 ### Research Papers
-#### Parallel Query Optimization
-- <font color=#1E88E5>[Academic]</font> On Optimistic Methods for Concurrency Controll, 1981, [[Paper]](https://www.eecs.harvard.edu/~htk/publication/1981-tods-kung-robinson.pdf)
+- <font color=#1E88E5>[Academic]</font> On Optimistic Methods for Concurrency Control, 1981, [[Paper]](https://www.eecs.harvard.edu/~htk/publication/1981-tods-kung-robinson.pdf)
 - <font color=#1E88E5>[Academic]</font> Scheduling problems in parallel query optimization, 1995, [[Paper]](https://dl.acm.org/doi/pdf/10.1145/212433.212471)
 - <font color=#1E88E5>[Academic]</font> Efficient and accurate cost models for parallel query optimization, 1996, [[Paper]](https://dl.acm.org/doi/pdf/10.1145/237661.237707)
 - <font color=#1E88E5>[Academic]</font> Parallelizing query optimization, 2008, [[Paper]](http://www.vldb.org/pvldb/vol1/1453882.pdf)
 - <font color=#1E88E5>[Academic]</font> Flow algorithms for parallel query optimization, 2008, [[Paper]](https://ieeexplore.ieee.org/iel5/4492792/4497384/04497484.pdf?casa_token=HMsG6W9-6DgAAAAA:pSTUpQDjcZj6cTrk-KuaCI2U8drRyp9ExlMNA_nYRvdkjMTICoLs3qVu6p4fe2Hsikfdb8SCN5A)
 - <font color=#1E88E5>[Academic]</font> Query optimization for massively parallel data processing, 2011, [[Paper]](https://dl.acm.org/doi/pdf/10.1145/2038916.2038928?casa_token=1w8xkLfre-EAAAAA:nnTDmTDFPM5LDd9vO4z3jDP0VZM8Benf_NOhPBGD7h_wPr4KxY640w_Tj6XCC6oHV7PormnT0aEtJFE)
 - <font color=#1E88E5>[Academic]</font> Communication steps for parallel query processing, 2017, [[Paper]](https://dl.acm.org/doi/pdf/10.1145/3125644)
+- <font color=#1E88E5>[Academic]</font> Principles and realization strategies of multilevel transaction management, 1991, [[Paper]](https://dl.acm.org/doi/pdf/10.1145/103140.103145)
+- <font color=#1E88E5>[Academic]</font> Concurrency control in distributed database systems, 1981, [[Paper]](https://dl.acm.org/doi/pdf/10.1145/356842.356846)
+- <font color=#1E88E5>[Academic]</font> The log-structured merge-tree (LSM-tree), 1996, [[Paper]](https://www.inf.ufpr.br/eduardo/ensino/ci763/papers/lsmtree.pdf)
+- <font color=#1E88E5>[Academic]</font> An evaluation of distributed concurrency control, 2017, [[Paper]](https://dl.acm.org/doi/pdf/10.14778/3055540.3055548)
+
 
 ### Engineering Repos
+- <font color=#F4511E>[Developing]</font> lotusdb, a GO implementation of LSM-tree and key-value store, 2023, [[Codebase]](https://github.com/lotusdblabs/lotusdb)
+- <font color=#F4511E>[Developing]</font> Presto, a distributed SQL query engine, 2023, [[Codebase]](https://github.com/prestodb/presto)
+
 
 ### Other Materials
 - <font color=#915099>[Tech Article]</font> Concurrency Control in PostgreSQL, PostgreSQL, [[Doc link]](https://www.postgresql.org/docs/current/transaction-iso.html)
+- <font color=#915099>[Tech Article]</font> Using Parallel Execution, Oracle, [[Doc link]](https://docs.oracle.com/en/database/oracle/oracle-database/19/vldbg/using-parallel.html#GUID-3E2AE088-2505-465E-A8B2-AC38813EA355)
 
 ## Parallelism and Concurrency in OS
 
